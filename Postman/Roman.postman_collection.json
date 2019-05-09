@@ -1,0 +1,181 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Roman",
+		"_postman_id": "0fd95376-39b5-0bd8-d2de-7ee8dde265df",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"description": "",
+			"item": [
+				{
+					"name": "Login Roman",
+					"request": {
+						"url": "http://localhost:5000/api/login",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\" : \"odirlei@gmail.com\",\n\t\"senha\" : \"123456\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Projetos",
+			"description": "",
+			"item": [
+				{
+					"name": "Cadastrar Projeto",
+					"request": {
+						"url": "http://localhost:5000/api/projetos",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9kaXJsZWlAZ21haWwuY29tIiwianRpIjoiMyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbW5pc3RyYWRvciIsImV4cCI6MTU1NzMzODEzMiwiaXNzIjoiUm9tYW4uV2ViQXBpIiwiYXVkIjoiUm9tYW4uV2ViQXBpIn0.WhGUTeGxDSy8GKDZqXy_Ho1zOIpapiAUJXfHecFdoBU",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"titulo\" : \"Desenvolvimento de atividade Pedagogica\",\n\t\"idtema\" : 1,\n\t\"Descricao\" : \"xxxxxxx\",\n\t\"Idusuario\" : 1\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Projetos",
+					"request": {
+						"url": "http://localhost:5000/api/projetos",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9kaXJsZWlAZ21haWwuY29tIiwianRpIjoiMyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbW5pc3RyYWRvciIsImV4cCI6MTU1NzM0MjAxNCwiaXNzIjoiUm9tYW4uV2ViQXBpIiwiYXVkIjoiUm9tYW4uV2ViQXBpIn0.r6xv9jNq_kyVAbP4qAWl2CJqWboQH75N82J6mLyqvlg",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Temas",
+			"description": "",
+			"item": [
+				{
+					"name": "Listar Temas",
+					"request": {
+						"url": "http://localhost:5000/api/temas",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9kaXJsZWlAZ21haWwuY29tIiwianRpIjoiMyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbW5pc3RyYWRvciIsImV4cCI6MTU1NzM0MjAxNCwiaXNzIjoiUm9tYW4uV2ViQXBpIiwiYXVkIjoiUm9tYW4uV2ViQXBpIn0.r6xv9jNq_kyVAbP4qAWl2CJqWboQH75N82J6mLyqvlg",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar Temas",
+					"request": {
+						"url": "http://localhost:5000/api/temas",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9kaXJsZWlAZ21haWwuY29tIiwianRpIjoiMyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbW5pc3RyYWRvciIsImV4cCI6MTU1NzM0MjAxNCwiaXNzIjoiUm9tYW4uV2ViQXBpIiwiYXVkIjoiUm9tYW4uV2ViQXBpIn0.r6xv9jNq_kyVAbP4qAWl2CJqWboQH75N82J6mLyqvlg",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\" : \"Plantacoes\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Atuaiza Situação Tema",
+					"request": {
+						"url": "http://localhost:5000/api/temas",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9kaXJsZWlAZ21haWwuY29tIiwianRpIjoiMyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbW5pc3RyYWRvciIsImV4cCI6MTU1NzQyMjIxOSwiaXNzIjoiUm9tYW4uV2ViQXBpIiwiYXVkIjoiUm9tYW4uV2ViQXBpIn0._m0khrTqsbZjdh1szzla20m6kziZrPAF8jKGt31tWdk",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 5,\n    \"idSituacao\": 2\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuarios",
+			"description": "",
+			"item": [
+				{
+					"name": "Listar Professores",
+					"request": {
+						"url": "http://localhost:5000/api/usuarios",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9kaXJsZWlAZ21haWwuY29tIiwianRpIjoiMyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbW5pc3RyYWRvciIsImV4cCI6MTU1NzQyNzk5MywiaXNzIjoiUm9tYW4uV2ViQXBpIiwiYXVkIjoiUm9tYW4uV2ViQXBpIn0.X7Ycj9n7WsPrKGe0ohyG4_pz1h5YLFPqBPVL5a63Pxg",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

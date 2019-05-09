@@ -14,7 +14,7 @@ namespace Senai.Roman.WebApi.Domains
         public string Nome { get; set; }
         public string Email { get; set; }
         public string Senha { get; set; }
-        public int? IdTipoUsuario { get; set; }
+        public int IdTipoUsuario { get; set; }
 
         public TiposUsuarios IdTipoUsuarioNavigation { get; set; }
         public ICollection<Projetos> Projetos { get; set; }

@@ -9,5 +9,9 @@ namespace Senai.Roman.WebApi.Interfaces
     interface IUsuarioRepository
     {
         Usuarios BuscarPorEmailSenha(string email, string senha);
+
+        List<Usuarios> ListarUsuarios();
+
+
     }
 }

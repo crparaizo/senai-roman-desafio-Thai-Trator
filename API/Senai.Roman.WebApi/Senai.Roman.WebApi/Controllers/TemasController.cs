@@ -60,11 +60,7 @@ namespace Senai.Roman.WebApi.Controllers
         {
             try
             {
-                Temas TemaAlterado = TemaRepository.BuscarTemaPorId(tema.Id);
-
-                TemaAlterado.IdSituacao = tema.IdSituacao;
-                TemaRepository.AlterarSituacaoTema(TemaAlterado);
-
+                TemaRepository.AlterarSituacaoTema(tema);
                 return Ok();
             }
             catch (Exception ex)

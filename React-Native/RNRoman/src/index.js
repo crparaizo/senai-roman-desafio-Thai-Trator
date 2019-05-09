@@ -1,10 +1,12 @@
+import { createBottomTabNavigator, createAppContainer, createStackNavigator, createSwitchNavigator } from "react-navigation";
 import Login from "./pages/login";
 import CadastroProjetos from "./pages/cadastroProjetos";
 import CadastroUsuarios from "./pages/cadastroUsuarios";
 import ListarProjetos from "./pages/listaProjetos";
-import { createDrawerNavigator, createAppContainer } from "react-navigation";
 
-const MainNavigator = createDrawerNavigator(
+const AuthStack = createStackNavigator({ Login });
+
+const MainNavigator = createBottomTabNavigator(
     {
         Login,
         CadastroProjetos,
@@ -13,11 +15,14 @@ const MainNavigator = createDrawerNavigator(
     },
     {
         initialRouteName: "Login",
+        swipeEnabled: true,
         tabBarOptions: {
             showLabel: false,
             showIcon: true,
             inactiveBackgroundColor: "#dd99ff",
             activeBackgroundColor: "#B727FF",
+            activeTintColor: "#FFFFFF",
+            inactiveTintColor: "#FFFFFF",
             style: {
                 height: 50
             }
@@ -25,4 +30,16 @@ const MainNavigator = createDrawerNavigator(
     }
 );
 
-export default createAppContainer(MainNavigator);
+// export default createAppContainer(MainNavigator);
+
+export default createAppContainer(
+    createSwitchNavigator(
+        {
+            MainNavigator,
+            AuthStack
+        },
+        {
+            initialRouteName: "AuthStack"
+        }
+    )
+);

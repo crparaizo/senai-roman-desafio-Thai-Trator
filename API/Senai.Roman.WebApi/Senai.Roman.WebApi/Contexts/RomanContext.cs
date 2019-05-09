@@ -35,6 +35,9 @@ namespace Senai.Roman.WebApi.Domains
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<UsuariosEquipes>()
+            .HasKey(x => new { x.IdUsuario, x.IdEquipe });
+
             modelBuilder.Entity<Equipes>(entity =>
             {
                 entity.ToTable("EQUIPES");

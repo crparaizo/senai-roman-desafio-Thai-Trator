@@ -14,7 +14,11 @@ namespace Senai.Roman.WebApi.Repositories
         {
             using (RomanContext ctx = new RomanContext())
             {
-                ctx.Temas.Update(tema);
+                Temas temaProcurado = ctx.Temas.Find(tema.Id);
+
+                temaProcurado.IdSituacao = tema.IdSituacao;
+
+                ctx.Temas.Update(temaProcurado);
                 ctx.SaveChanges();
             }
         }
@@ -43,19 +47,19 @@ namespace Senai.Roman.WebApi.Repositories
             }
         }
 
-        public Temas BuscarTemaPorId(int id)
-        {
-            using (RomanContext ctx = new RomanContext())
-            {
-                // Consultas consultaProcurada = ctx.Consultas.Find(id);
-                Temas consultaProcurada = ctx.Temas.Include(x => x.IdSituacaoNavigation).FirstOrDefault(x => x.Id == id);
+        //public Temas BuscarTemaPorId(int id)
+        //{
+        //    using (RomanContext ctx = new RomanContext())
+        //    {
+        //        // Consultas consultaProcurada = ctx.Consultas.Find(id);
+        //        Temas TemaAlterado = ctx.Temas.Include(x => x.IdSituacaoNavigation).FirstOrDefault(x => x.Id == id);
 
-                if (consultaProcurada == null)
-                {
-                    return null;
-                }
-                return consultaProcurada;
-            }
-        }
+        //        if (TemaAlterado == null)
+        //        {
+        //            return null;
+        //        }
+        //        return TemaAlterado;
+        //    }
+        //}
     }
 }

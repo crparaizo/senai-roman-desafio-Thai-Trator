@@ -4,6 +4,4 @@ import { Text, Image, StyleSheet } from "react-native";
 
 class CadastroProjetos extends Component { }
 
-const
-
 export default CadastroProjetos;

@@ -14,7 +14,7 @@ namespace Senai.Roman.WebApi.Interfaces
 
         void AlterarSituacaoTema(Temas tema);
 
-        Temas BuscarTemaPorId(int id);
+        //Temas BuscarTemaPorId(int id);
 
     }
 }

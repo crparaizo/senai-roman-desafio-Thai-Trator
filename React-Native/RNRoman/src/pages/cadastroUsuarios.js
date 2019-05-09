@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 
-import { Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet } from "react-native";
 
-class CadastroUsuarios extends Component { }
-
-const
-
-export default CadastroUsuarios;
+export default class CadastroUsuarios extends Component { 
+    render(){
+        return(
+            <View>Teste</View>
+        );
+    }
+}

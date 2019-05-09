@@ -12720,23 +12720,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\32184284831\\.nuget\\packages\\": {},
+    "C:\\Users\\43765601896\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\32184284831\\Documents\\Dev 2 semestre\\Roman\\Senai.Roman.WebApi\\Senai.Roman.WebApi\\Senai.Roman.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\43765601896\\Downloads\\Senai_Sprint_5_Mobile\\Desafio_Roman\\API\\Senai.Roman.WebApi\\Senai.Roman.WebApi\\Senai.Roman.WebApi.csproj",
       "projectName": "Senai.Roman.WebApi",
-      "projectPath": "C:\\Users\\32184284831\\Documents\\Dev 2 semestre\\Roman\\Senai.Roman.WebApi\\Senai.Roman.WebApi\\Senai.Roman.WebApi.csproj",
-      "packagesPath": "C:\\Users\\32184284831\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\32184284831\\Documents\\Dev 2 semestre\\Roman\\Senai.Roman.WebApi\\Senai.Roman.WebApi\\obj\\",
+      "projectPath": "C:\\Users\\43765601896\\Downloads\\Senai_Sprint_5_Mobile\\Desafio_Roman\\API\\Senai.Roman.WebApi\\Senai.Roman.WebApi\\Senai.Roman.WebApi.csproj",
+      "packagesPath": "C:\\Users\\43765601896\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\43765601896\\Downloads\\Senai_Sprint_5_Mobile\\Desafio_Roman\\API\\Senai.Roman.WebApi\\Senai.Roman.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\32184284831\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\43765601896\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
