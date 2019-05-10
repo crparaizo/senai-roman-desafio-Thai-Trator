@@ -4,7 +4,7 @@
     "windowsAuthentication": false, 
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:59125", //Colocar IP da máquina
+      "applicationUrl": "http://192.168.3.151:59125", //Colocar IP da máquina
       "sslPort": 0
     }
   },
@@ -21,7 +21,7 @@
       "commandName": "Project",
       "launchBrowser": false,
       "launchUrl": "api/values",
-      "applicationUrl": "http://localhost:5000", //Colocar IP da máquina
+      "applicationUrl": "http://192.168.3.151:5000", //Colocar IP da máquina
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

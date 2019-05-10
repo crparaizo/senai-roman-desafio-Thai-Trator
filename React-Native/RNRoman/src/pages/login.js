@@ -8,8 +8,7 @@ import {
   ImageBackground,
   TextInput,
   TouchableOpacity,
-  AsyncStorage,
-  Button
+  AsyncStorage
 } from "react-native";
 
 import api from "../services/api";
@@ -31,10 +30,11 @@ class Login extends Component {
       email: this.state.email,
       senha: this.state.senha
     });
-    
+
     const token = resposta.data.token;
     await AsyncStorage.setItem("userToken", token);
-    this.props.navigation.navigate("er");
+    this.props.navigation.navigate("MainNavigator");
+
   };
 
   render() {
@@ -43,15 +43,13 @@ class Login extends Component {
         // source={require("../assets/img/login.png")}
         style={StyleSheet.absoluteFillObject}
       >
-        <Text style={styles.btnLoginText}>LOGIN</Text>
-        <View style={styles.overlay} />
-        <View style={styles.main}>
+        <Text >LOGIN</Text>
+        <View />
+        <View >
           <Image
             // source={require("../assets/img/loginIcon2x.png")}
-            style={styles.mainImgLogin}
           />
           <TextInput
-            style={styles.inputLogin}
             placeholder="email"
             placeholderTextColor="black"
             underlineColorAndroid="black"
@@ -59,7 +57,6 @@ class Login extends Component {
           />
 
           <TextInput
-            style={styles.inputLogin}
             placeholder="senha"
             placeholderTextColor="#blue"
             password="true"
@@ -67,41 +64,14 @@ class Login extends Component {
             onChangeText={senha => this.setState({ senha })}
           />
           <TouchableOpacity
-            style={styles.btnLogin}
             onPress={this._realizarLogin}
           >
-            <Text style={styles.btnLoginText}>Logar - Botão</Text>
+            <Text >Logar</Text>
           </TouchableOpacity>
         </View>
       </ImageBackground>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  tabNavigatorIconProfile: { width: 25, height: 25, tintColor: "#FFFFFF" },
-  // btnLogin: {
-  //   height: 38,
-  //   shadowColor: "rgba(0,0,0, 0.4)", // IOS
-  //   shadowOffset: { height: 1, width: 1 }, // IOS
-  //   shadowOpacity: 1, // IOS
-  //   shadowRadius: 1, //IOS
-  //   elevation: 3, // Android
-  //   width: 240,
-  //   borderRadius: 4,
-  //   borderWidth: 1,
-  //   borderColor: "#FFFFFF",
-  //   backgroundColor: "#FFFFFF",
-  //   justifyContent: "center",
-  //   alignItems: "center",
-  //   marginTop: 10
-  // },
-  // btnLoginText: {
-  //   fontSize: 10,
-  //   fontFamily: "OpenSans-Light",
-  //   color: "#B727FF",
-  //   letterSpacing: 4
-  // }
-});
 
 export default Login;
