@@ -1,6 +1,16 @@
 import React, { Component } from "react";
+import axios from "axios";
 
-import { Text, Image, StyleSheet } from "react-native";
+import {
+    StyleSheet,
+    View,
+    Text,
+    Image,
+    ImageBackground,
+    TextInput,
+    TouchableOpacity,
+    AsyncStorage
+} from "react-native";
 
 class CadastroProjetos extends Component {
     static navigationOptions = {
@@ -12,19 +22,26 @@ class CadastroProjetos extends Component {
         this.state = { titulo: "", idTema: "", descricao: "", idUsuario: "" };
     }
 
-    _realizarLogin = async () => {
-        // console.warn(this.state.email + this.state.senha);
+    cadastrarProjeto = async () => {
 
-        const resposta = await api.post("/login", {
-            email: this.state.email,
-            senha: this.state.senha
-        });
+        let teste = {
+            titulo: this.state.titulo,
+            idTema: this.state.idTema,
+            descricao: this.state.descricao,
+            idUsuario: this.state.idUsuario
+        }
 
-        const token = resposta.data.token;
-        await AsyncStorage.setItem("userToken", token);
-        this.props.navigation.navigate("MainNavigator");
-
-    };
+        await axios.post("http://192.168.3.151:5000/api/projetos", teste, {
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+            .then(response => {
+                console.warn('Foi', response)
+            })
+            .catch(error => console.warn(error))
+        this.props.navigation.navigate('ListarProjetos')
+    }
 
     render() {
         return (
@@ -33,7 +50,6 @@ class CadastroProjetos extends Component {
                 style={StyleSheet.absoluteFillObject}
             >
                 <Text >CADASTRO</Text>
-                <View />
                 <View >
                     <Image
                     // source={require("../assets/img/loginIcon2x.png")}
@@ -63,7 +79,7 @@ class CadastroProjetos extends Component {
                         onChangeText={idUsuario => this.setState({ idUsuario })}
                     />
                     <TouchableOpacity
-                        onPress={this._realizarLogin}
+                        onPress={this.cadastrarProjeto}
                     >
                         <Text >Cadastrar</Text>
                     </TouchableOpacity>

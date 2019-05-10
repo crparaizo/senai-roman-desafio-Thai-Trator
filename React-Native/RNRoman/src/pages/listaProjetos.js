@@ -35,6 +35,7 @@ class ListarProjetos extends Component {
 
     render() {
         return (
+            // SafeAreaView
             <View >
                 <View>
                     <View>

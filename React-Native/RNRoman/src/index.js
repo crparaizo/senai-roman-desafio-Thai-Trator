@@ -13,7 +13,8 @@ const MainNavigator = createDrawerNavigator(
         ListarProjetos
     },
     {
-        initialRouteName: "ListarProjetos",
+        // initialRouteName: "ListarProjetos",
+        initialRouteName: "CadastroProjetos",
         swipeEnabled: false,
         tabBarOptions: {
             showLabel: false,

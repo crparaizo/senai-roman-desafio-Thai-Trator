@@ -43,12 +43,11 @@ class Login extends Component {
         // source={require("../assets/img/login.png")}
         style={StyleSheet.absoluteFillObject}
       >
-        <Text >LOGIN</Text>
-        <View />
         <View >
-          <Image
-            // source={require("../assets/img/loginIcon2x.png")}
+          <Image style={{ width: 150, height: 150, marginLeft: "30%", marginTop: "10%", marginBottom: "10%" }}
+            source={require("../assets/img/logo.png")}
           />
+          <Text style={{ textAlign: "center", fontSize: 35 }} >LOGIN</Text>
           <TextInput
             placeholder="email"
             placeholderTextColor="black"
@@ -66,7 +65,7 @@ class Login extends Component {
           <TouchableOpacity
             onPress={this._realizarLogin}
           >
-            <Text >Logar</Text>
+            <Text style={{ textAlign: "center", fontSize: 35 }}   >Logar</Text>
           </TouchableOpacity>
         </View>
       </ImageBackground>
