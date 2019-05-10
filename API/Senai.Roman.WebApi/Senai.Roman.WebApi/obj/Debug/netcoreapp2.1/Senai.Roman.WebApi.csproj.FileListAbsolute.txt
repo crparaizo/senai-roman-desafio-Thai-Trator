@@ -12,17 +12,3 @@ C:\Users\32184284831\Documents\Dev 2 semestre\Roman\Senai.Roman.WebApi\Senai.Rom
 C:\Users\32184284831\Documents\Dev 2 semestre\Roman\Senai.Roman.WebApi\Senai.Roman.WebApi\obj\Debug\netcoreapp2.1\Senai.Roman.WebApi.RazorTargetAssemblyInfo.cache
 C:\Users\32184284831\Documents\Dev 2 semestre\Roman\Senai.Roman.WebApi\Senai.Roman.WebApi\obj\Debug\netcoreapp2.1\Senai.Roman.WebApi.dll
 C:\Users\32184284831\Documents\Dev 2 semestre\Roman\Senai.Roman.WebApi\Senai.Roman.WebApi\obj\Debug\netcoreapp2.1\Senai.Roman.WebApi.pdb
-C:\Users\43765601896\Downloads\Senai_Sprint_5_Mobile\Desafio_Roman\API\Senai.Roman.WebApi\Senai.Roman.WebApi\bin\Debug\netcoreapp2.1\Senai.Roman.WebApi.deps.json
-C:\Users\43765601896\Downloads\Senai_Sprint_5_Mobile\Desafio_Roman\API\Senai.Roman.WebApi\Senai.Roman.WebApi\bin\Debug\netcoreapp2.1\Senai.Roman.WebApi.runtimeconfig.json
-C:\Users\43765601896\Downloads\Senai_Sprint_5_Mobile\Desafio_Roman\API\Senai.Roman.WebApi\Senai.Roman.WebApi\bin\Debug\netcoreapp2.1\Senai.Roman.WebApi.runtimeconfig.dev.json
-C:\Users\43765601896\Downloads\Senai_Sprint_5_Mobile\Desafio_Roman\API\Senai.Roman.WebApi\Senai.Roman.WebApi\bin\Debug\netcoreapp2.1\Senai.Roman.WebApi.dll
-C:\Users\43765601896\Downloads\Senai_Sprint_5_Mobile\Desafio_Roman\API\Senai.Roman.WebApi\Senai.Roman.WebApi\bin\Debug\netcoreapp2.1\Senai.Roman.WebApi.pdb
-C:\Users\43765601896\Downloads\Senai_Sprint_5_Mobile\Desafio_Roman\API\Senai.Roman.WebApi\Senai.Roman.WebApi\obj\Debug\netcoreapp2.1\Senai.Roman.WebApi.csprojAssemblyReference.cache
-C:\Users\43765601896\Downloads\Senai_Sprint_5_Mobile\Desafio_Roman\API\Senai.Roman.WebApi\Senai.Roman.WebApi\obj\Debug\netcoreapp2.1\Senai.Roman.WebApi.csproj.CoreCompileInputs.cache
-C:\Users\43765601896\Downloads\Senai_Sprint_5_Mobile\Desafio_Roman\API\Senai.Roman.WebApi\Senai.Roman.WebApi\obj\Debug\netcoreapp2.1\Senai.Roman.WebApi.RazorAssemblyInfo.cache
-C:\Users\43765601896\Downloads\Senai_Sprint_5_Mobile\Desafio_Roman\API\Senai.Roman.WebApi\Senai.Roman.WebApi\obj\Debug\netcoreapp2.1\Senai.Roman.WebApi.RazorAssemblyInfo.cs
-C:\Users\43765601896\Downloads\Senai_Sprint_5_Mobile\Desafio_Roman\API\Senai.Roman.WebApi\Senai.Roman.WebApi\obj\Debug\netcoreapp2.1\Senai.Roman.WebApi.AssemblyInfoInputs.cache
-C:\Users\43765601896\Downloads\Senai_Sprint_5_Mobile\Desafio_Roman\API\Senai.Roman.WebApi\Senai.Roman.WebApi\obj\Debug\netcoreapp2.1\Senai.Roman.WebApi.AssemblyInfo.cs
-C:\Users\43765601896\Downloads\Senai_Sprint_5_Mobile\Desafio_Roman\API\Senai.Roman.WebApi\Senai.Roman.WebApi\obj\Debug\netcoreapp2.1\Senai.Roman.WebApi.RazorTargetAssemblyInfo.cache
-C:\Users\43765601896\Downloads\Senai_Sprint_5_Mobile\Desafio_Roman\API\Senai.Roman.WebApi\Senai.Roman.WebApi\obj\Debug\netcoreapp2.1\Senai.Roman.WebApi.dll
-C:\Users\43765601896\Downloads\Senai_Sprint_5_Mobile\Desafio_Roman\API\Senai.Roman.WebApi\Senai.Roman.WebApi\obj\Debug\netcoreapp2.1\Senai.Roman.WebApi.pdb

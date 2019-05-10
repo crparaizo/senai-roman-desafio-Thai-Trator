@@ -35,5 +35,19 @@ namespace Senai.Roman.WebApi.Controllers
                 return BadRequest(new { mensagem = "Erro!" + ex.Message });
             }
         }
+
+        //[Authorize(Roles = "Admnistrador")]
+        [HttpGet("area/{area}")]
+        public IActionResult Listar(string area)
+        {
+            try
+            {
+                return Ok(UsuarioRepository.BuscarUsuarioPorArea(area));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { mensagem = "Erro!" + ex.Message });
+            }
+        }
     }
 }
