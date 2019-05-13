@@ -2,9 +2,9 @@
   "$schema": "http://json.schemastore.org/launchsettings.json",
   "iisSettings": {
     "windowsAuthentication": false, 
-    "anonymousAuthentication": true,
+    "anonymousAuthentication": true, 
     "iisExpress": {
-      "applicationUrl": "http://192.168.3.151:59125", //Colocar IP da máquina
+      "applicationUrl": "http://localhost:59125",
       "sslPort": 0
     }
   },
@@ -21,7 +21,7 @@
       "commandName": "Project",
       "launchBrowser": false,
       "launchUrl": "api/values",
-      "applicationUrl": "http://192.168.3.151:5000", //Colocar IP da máquina
+      "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

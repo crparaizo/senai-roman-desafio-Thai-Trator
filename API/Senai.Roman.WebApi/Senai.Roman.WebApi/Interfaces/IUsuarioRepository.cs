@@ -12,6 +12,6 @@ namespace Senai.Roman.WebApi.Interfaces
 
         List<Usuarios> ListarUsuarios();
 
-
+        List<Usuarios> BuscarUsuarioPorArea(string equipe);
     }
 }

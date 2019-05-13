@@ -7,5 +7,7 @@ namespace Senai.Roman.WebApi.Domains
     {
         public int Id { get; set; }
         public string Nome { get; set; }
+
+        public ICollection<UsuariosEquipes> UsuariosEquipes { get; set; }
     }
 }

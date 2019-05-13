@@ -21,6 +21,7 @@ namespace Senai.Roman.WebApi.Domains
         public virtual DbSet<Temas> Temas { get; set; }
         public virtual DbSet<TiposUsuarios> TiposUsuarios { get; set; }
         public virtual DbSet<Usuarios> Usuarios { get; set; }
+        public virtual DbSet<UsuariosEquipes> UsuariosEquipes { get; set; }
 
         // Unable to generate entity type for table 'dbo.USUARIOS_EQUIPES'. Please see the warning messages.
 
@@ -37,6 +38,17 @@ namespace Senai.Roman.WebApi.Domains
         {
             modelBuilder.Entity<UsuariosEquipes>()
             .HasKey(x => new { x.IdUsuario, x.IdEquipe });
+
+
+            modelBuilder.Entity<UsuariosEquipes>()
+                .HasOne<Usuarios>(sc => sc.Usuarios)
+                .WithMany(s => s.UsuariosEquipes)
+                .HasForeignKey(sc => sc.IdUsuario);
+
+            modelBuilder.Entity<UsuariosEquipes>()
+                .HasOne<Equipes>(sc => sc.Equipes)
+                .WithMany(s => s.UsuariosEquipes)
+                .HasForeignKey(sc => sc.IdEquipe);
 
             modelBuilder.Entity<Equipes>(entity =>
             {

@@ -23,7 +23,7 @@ namespace Senai.Roman.WebApi.Controllers
             ProjetoRepository = new ProjetoRepository();
         }
 
-        //[Authorize]
+        [Authorize]
         [HttpGet]
         public IActionResult Listar()
         {
@@ -37,7 +37,7 @@ namespace Senai.Roman.WebApi.Controllers
             }
         }
 
-        //[Authorize]
+        [Authorize]
         [HttpPost]
         public IActionResult CadastrarProjeto(Projetos projeto)
         {

@@ -17,6 +17,8 @@ namespace Senai.Roman.WebApi.Domains
         public int IdTipoUsuario { get; set; }
 
         public TiposUsuarios IdTipoUsuarioNavigation { get; set; }
-        public ICollection<Projetos> Projetos { get; set; }
+        public virtual ICollection<Projetos> Projetos { get; set; }
+
+        public virtual ICollection<UsuariosEquipes> UsuariosEquipes { get; set; }
     }
 }
